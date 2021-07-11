@@ -29,7 +29,7 @@ class FPakInfo {
             for (i in offsetsToTry.size - 1 downTo 0) {
                 if (pakSize - offsetsToTry[i] >= 0) {
                     maxSize = offsetsToTry[i]
-                    maxOffsetToTryIndex = i
+                    maxOffsetToTryIndex = i + 1
                     break
                 }
             }
